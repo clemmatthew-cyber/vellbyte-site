@@ -10,6 +10,7 @@ SUPPORT = 'https://support.vellbyte.com'
 FB = 'https://www.facebook.com/profile.php?id=61595829853886'
 YT = 'https://www.youtube.com/@vellbyteapps'
 IG = 'https://www.instagram.com/vellbyteapps/'
+X_PROFILE = 'https://x.com/vellbyteapps'
 
 nav = [('Apps','/apps/'), ('About','/about/'), ('Testing','/testing/'), ('Contact','/contact/')]
 
@@ -27,7 +28,7 @@ def header():
     return f'''<a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="shell header-inner">{brand()}<nav class="main-nav" aria-label="Main navigation">{links}</nav><a class="header-cta" href="/apps/">Explore our apps <span aria-hidden="true">↗</span></a></div></header>'''
 
 def footer():
-    return f'''<footer class="site-footer"><div class="shell"><div class="footer-top"><div><a class="footer-wordmark" href="/">Vellbyte<span class="word-dot">.</span></a><p>Useful apps for everyday life.</p></div><div class="footer-col"><strong>Explore</strong><a href="/apps/">Our apps</a><a href="/about/">About</a><a href="/testing/">Testing information</a></div><div class="footer-col"><strong>Get in touch</strong><a href="/contact/">Contact</a><a href="{SUPPORT}/">App support drafts <span aria-hidden="true">↗</span></a><a href="{FB}">Facebook <span aria-hidden="true">↗</span></a><a href="{YT}">YouTube <span aria-hidden="true">↗</span></a><a href="{IG}">Instagram <span aria-hidden="true">↗</span></a></div><div class="footer-col"><strong>Information</strong><a href="/privacy/">Website privacy</a><a href="{SUPPORT}/trip-split-privacy.html">Trip Split privacy draft <span aria-hidden="true">↗</span></a><a href="{SUPPORT}/pack-planner-privacy.html">Pack Planner privacy draft <span aria-hidden="true">↗</span></a></div></div><div class="footer-bottom"><span>© 2026 Vellbyte</span><span>Made for the everyday.</span></div></div></footer>'''
+    return f'''<footer class="site-footer"><div class="shell"><div class="footer-top"><div><a class="footer-wordmark" href="/">Vellbyte<span class="word-dot">.</span></a><p>Useful apps for everyday life.</p></div><div class="footer-col"><strong>Explore</strong><a href="/apps/">Our apps</a><a href="/about/">About</a><a href="/testing/">Testing information</a></div><div class="footer-col"><strong>Get in touch</strong><a href="/contact/">Contact</a><a href="{SUPPORT}/">App support drafts <span aria-hidden="true">↗</span></a><a href="{FB}">Facebook <span aria-hidden="true">↗</span></a><a href="{YT}">YouTube <span aria-hidden="true">↗</span></a><a href="{IG}">Instagram <span aria-hidden="true">↗</span></a><a href="{X_PROFILE}">X <span aria-hidden="true">↗</span></a></div><div class="footer-col"><strong>Information</strong><a href="/privacy/">Website privacy</a><a href="{SUPPORT}/trip-split-privacy.html">Trip Split privacy draft <span aria-hidden="true">↗</span></a><a href="{SUPPORT}/pack-planner-privacy.html">Pack Planner privacy draft <span aria-hidden="true">↗</span></a></div></div><div class="footer-bottom"><span>© 2026 Vellbyte</span><span>Made for the everyday.</span></div></div></footer>'''
 
 def document(title, description, body, path='/', image='/assets/share.png'):
     canonical=SITE+path
