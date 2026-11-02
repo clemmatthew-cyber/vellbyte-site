@@ -11,3 +11,7 @@
 @media(max-width:380px){.app-card{grid-template-columns:1fr .55fr}.app-card-image .phone{width:140px;left:7%}.app-number{font-size:8px}.hero-art .phone{width:135px}.hero-art{height:355px}.hero-art .phone-back{left:12%}.hero-art .phone-front{left:49%}.actions .button{width:100%}.main-nav a{font-size:12px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
 .product-heading-meta{display:flex;align-items:center;flex-wrap:wrap;gap:12px}.product-name{font-size:13px;letter-spacing:-.01em;color:var(--navy)}
+.main-nav a[aria-current="page"]{color:var(--blue);text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px}
+.service-intro{background:#fff}.service-intro-inner{display:grid;grid-template-columns:1fr .68fr;gap:10%;align-items:center}.service-intro-inner>div:last-child p{color:var(--slate);font-size:16px;max-width:390px}.service-details{background:var(--pale)}
+.app-card h2{font-size:31px;line-height:1.05;letter-spacing:-.035em;margin:18px 0 12px}
+@media(max-width:680px){.service-intro-inner{grid-template-columns:1fr;gap:18px}.main-nav{flex-wrap:wrap;column-gap:12px;row-gap:4px;justify-content:flex-start}.main-nav a{padding:7px 0}.app-card h2{font-size:27px}}

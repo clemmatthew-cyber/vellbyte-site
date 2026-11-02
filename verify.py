@@ -7,7 +7,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parent
 BASE = 'http://127.0.0.1:8765'
-PAGES = ['/', '/apps/', '/apps/trip-split/', '/apps/pack-planner/', '/about/', '/contact/', '/testing/', '/privacy/']
+PAGES = ['/', '/apps/', '/apps/trip-split/', '/apps/pack-planner/', '/services/', '/about/', '/contact/', '/testing/', '/privacy/']
 
 class Check(HTMLParser):
     def __init__(self):
